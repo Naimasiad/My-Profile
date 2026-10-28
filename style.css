@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f3ff;
+  color: #293449;
+}
+
+
+header {
+  height: 62px;
+  background: white;
+  border-bottom: 1px solid #dddde8;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  color: #5b5ff5;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #394354;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #5b5ff5;
+}
+
+main {
+  max-width: 1060px;
+  margin: 40px auto 85px;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+
+  padding: 0;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #dedee8;
+  border-radius: 16px;
+
+  padding: 28px;
+
+  text-align: center;
+
+  height: fit-content;
+
+  box-shadow: 0 8px 25px rgba(80, 70, 150, 0.05);
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid #6265ff;
+
+  box-shadow: 0 8px 20px rgba(98, 101, 255, 0.2);
+
+  margin-bottom: 18px;
+}
+
+.profile-card h1 {
+  font-size: 23px;
+  color: #182033;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #707789;
+  margin-bottom: 7px;
+}
+
+.location {
+  font-size: 14px;
+  color: #657084;
+}
+
+.profile-card hr {
+  border: none;
+  border-top: 1px solid #dddfe8;
+  margin: 22px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-info a {
+  color: #5860f5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Right side cards */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+
+  border: 1px solid #dedee8;
+  border-radius: 16px;
+
+  padding: 28px;
+
+  box-shadow: 0 8px 25px rgba(80, 70, 150, 0.05);
+}
+
+.card h2 {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #5c61f6;
+
+  margin-bottom: 15px;
+}
+
+.card > p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #354054;
+}
+
+/* Skills */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.skill {
+  background: #f8f9fb;
+
+  border: 1px solid #dfe1e8;
+  border-radius: 11px;
+
+  padding: 25px 18px;
+
+  text-align: center;
+}
+
+.emoji {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.skill h3 {
+  color: #182033;
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.skill p {
+  color: #687184;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+  min-height: 66px;
+
+  background: white;
+  border-top: 1px solid #dddde8;
+
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #697285;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+}
+
+.social-links a {
+  color: #697285;
+  text-decoration: none;
+  font-weight: 500;
+}
+.social-links {
+  position: relative;
+  z-index: 9999;
+}
+
+
+}
+.social-links a:hover {
+  color: #5b5ff5;
+}
+
+@media (max-width: 750px) {
+
+  header {
+    padding: 0 20px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    margin: 25px 15px 50px;
+    gap: 20px;
+  }
+
+  .profile-card {
+    width: 100%;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111118;
+  color: #A1A1AA;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 25px 15px;
+  border-top: 1px solid #e1e3ea;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #697285;
+}
+
+footer .funny-text {
+  color: #182033;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+footer .highlight {
+  color: #5b5ff5;
+  font-weight: 600;
+}
+
+}
+
+}
+}
